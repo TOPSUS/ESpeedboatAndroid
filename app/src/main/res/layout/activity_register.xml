@@ -96,7 +96,7 @@
             android:orientation="vertical">
 
         <Button
-            android:id="@+id/cirLoginButton"
+            android:id="@+id/registerButton"
             style="@style/loginButton"
             android:text="Registrasi"
             android:layout_gravity="right"
