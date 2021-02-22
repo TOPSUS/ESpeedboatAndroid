@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginHorizontal="30dp">
+
+        <TextView
+            style="@style/loginHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:text="Registrasi" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                style="@style/modifiedEditText"
+                android:layout_marginTop="10dp"
+                android:hint="NIK"
+                android:inputType="textEmailAddress"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/editTextPassword1"
+                style="@style/modifiedEditText"
+                android:hint="Nama"
+                android:inputType="text"
+                android:layout_marginTop="25dp"
+                android:maxLines="1" />
+            <EditText
+                android:id="@+id/editTextPassword2"
+                style="@style/modifiedEditText"
+                android:hint="Alamat"
+                android:inputType="text"
+                android:layout_marginTop="25dp"
+                android:maxLines="1" />
+            <EditText
+                android:id="@+id/editTextPassword3"
+                style="@style/modifiedEditText"
+                android:hint="Jenis Kelamin"
+                android:inputType="text"
+                android:layout_marginTop="25dp"
+                android:maxLines="1" />
+            <EditText
+                android:id="@+id/editTextPassword5"
+                style="@style/modifiedEditText"
+                android:hint="Nomor Telepon"
+                android:inputType="text"
+                android:layout_marginTop="25dp"
+                android:maxLines="1" />
+            <EditText
+                android:id="@+id/editTextPassword6"
+                style="@style/modifiedEditText"
+                android:hint="Email"
+                android:inputType="text"
+                android:layout_marginTop="25dp"
+                android:maxLines="1" />
+            <EditText
+                android:id="@+id/editTextPassword7"
+                style="@style/modifiedEditText"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_marginTop="25dp"
+                android:maxLines="1" />
+            <EditText
+                android:id="@+id/editTextPassword8"
+                style="@style/modifiedEditText"
+                android:hint="Ulangi Password"
+                android:inputType="textPassword"
+                android:layout_marginTop="25dp"
+                android:maxLines="1" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="30dp"
+            android:orientation="vertical">
+
+        <Button
+            android:id="@+id/cirLoginButton"
+            style="@style/loginButton"
+            android:text="Registrasi"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+        <TextView
+            android:id="@+id/signUp"
+            style="@style/parent"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColor"
+            android:text="@string/signup_login_hint"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+    </LinearLayout>
+</LinearLayout>
