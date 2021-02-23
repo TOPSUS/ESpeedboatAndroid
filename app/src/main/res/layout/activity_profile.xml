@@ -8,7 +8,7 @@
     android:orientation="horizontal"
     android:background="@drawable/background_profile"
     tools:context=".ProfileActivity">
-
+        
     <LinearLayout
         android:id="@+id/LLProfile"
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             style="@style/textPrimary"
             android:layout_marginTop="20dp"
-            android:text="I Putu Alin Winata Gotama"
+            android:text="Nama Pengguna"
             tools:ignore="HardcodedText" />
 
         <!--NIK-->
@@ -63,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/textSecondary"
-            android:text="alingotama@gmail.com"
+            android:text="pengguna@gmail.com"
             tools:ignore="HardcodedText" />
 
         <!--ALAMAT-->
