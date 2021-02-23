@@ -11,4 +11,8 @@
 
     <!--colros for card-->
     <color name="whiteCardColor">#fff</color>
+
+    <!-- COLOR FOR TEXT   -->
+    <color name="textDark">#393939</color>
+    <color name="textDarkSecondary">#6E6E6E</color>
 </resources>

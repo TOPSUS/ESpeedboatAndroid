@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/background_profile"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/LLProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/loginHeader"
+            android:text="Profile"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textPrimary"
+            android:layout_marginTop="20dp"
+            android:text="I Putu Alin Winata Gotama"
+            tools:ignore="HardcodedText" />
+
+        <!--NIK-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/primaryTextColor"
+            android:layout_marginTop="5dp"
+            android:text="NIK"
+            tools:ignore="HardcodedText,SmallSp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textSecondary"
+            android:text="504628300001"
+            tools:ignore="HardcodedText" />
+
+        <!--EMAIL -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="EMAIL"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText,SmallSp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textSecondary"
+            android:text="alingotama@gmail.com"
+            tools:ignore="HardcodedText" />
+
+        <!--ALAMAT-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="ALAMAT"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText,SmallSp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textSecondary"
+            android:text="Jln.Nangka nomor 14"
+            tools:ignore="HardcodedText" />
+
+        <!--NOMOR TELP-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="NO HP"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText,SmallSp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textSecondary"
+            android:text="081246082444"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="JENIS KELAMIN"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText,SmallSp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textSecondary"
+            android:text="Laki - Laki"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="false"
+        android:layout_gravity="end"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/primaryTextColor"
+        android:src="@drawable/pencil_edit"
+        app:elevation="20dp"
+        app:fabCustomSize="80dp"
+        tools:targetApi="lollipop" />
+
+</RelativeLayout>
