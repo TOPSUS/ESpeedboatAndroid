@@ -22,6 +22,5 @@ public class EditProfileActivity extends AppCompatActivity {
         String[] items = new String[]{"Laki - Laki", "Perempuan"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner_layout, items);
         spJenisKelamin.setAdapter(adapter);
-        Toast.makeText(this, "SAT", Toast.LENGTH_SHORT).show();
     }
 }
