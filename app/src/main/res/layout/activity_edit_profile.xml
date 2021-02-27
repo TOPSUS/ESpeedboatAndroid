@@ -13,16 +13,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginStart="40dp"
         android:paddingBottom="30dp"
         android:paddingTop="30dp"
         android:clipToPadding="false"
+        android:scrollbarSize="0dp"
         >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="@dimen/loginCardRadius"
+            app:cardElevation="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
             >
 
             <TextView
@@ -30,138 +41,126 @@
                 android:layout_height="wrap_content"
                 style="@style/loginHeader"
                 android:text="Edit Profile"
+                android:layout_marginBottom="30dp"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textColor="@color/primaryTextColor"
-                android:layout_marginTop="5dp"
                 android:text="Full Name"
                 tools:ignore="HardcodedText,SmallSp" />
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edittextprofile"
-                android:padding="3dp"
-                android:textColor="@color/textDarkSecondary"
-                android:text="Nama Pengguna"
-                tools:ignore="HardcodedText"
-                >
-                <requestFocus />
-            </EditText>
+                android:id="@+id/etEditProfileFullName"
+                style="@style/modifiedEditText"
+                android:hint="Nama Lengkap"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLines="1"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textColor="@color/primaryTextColor"
-                android:layout_marginTop="5dp"
                 android:text="NIK"
                 tools:ignore="HardcodedText,SmallSp" />
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edittextprofile"
-                android:padding="3dp"
-                android:textColor="@color/textDarkSecondary"
-                android:text="504628300001"
-                tools:ignore="HardcodedText" />
+                android:id="@+id/etEditProfileNIK"
+                style="@style/modifiedEditText"
+                android:hint="NIK"
+                android:inputType="number"
+                android:maxLines="1"
+                tools:ignore="HardcodedText"
+                android:importantForAutofill="no" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textColor="@color/primaryTextColor"
-                android:layout_marginTop="5dp"
                 android:text="E-Mail"
                 tools:ignore="HardcodedText,SmallSp" />
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edittextprofile"
-                android:padding="3dp"
-                android:textColor="@color/textDarkSecondary"
-                android:text="pengguna@gmail.com"
-                tools:ignore="HardcodedText" />
+                android:id="@+id/etEditProfileEmail"
+                style="@style/modifiedEditText"
+                android:hint="E-mali aktif"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                tools:ignore="HardcodedText"
+                android:importantForAutofill="no" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textColor="@color/primaryTextColor"
-                android:layout_marginTop="5dp"
                 android:text="Alamat"
                 tools:ignore="HardcodedText,SmallSp" />
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edittextprofile"
-                android:padding="3dp"
-                android:textColor="@color/textDarkSecondary"
-                android:text="Jln.Nangka nomor 14"
-                tools:ignore="HardcodedText" />
+                android:id="@+id/etEditProfileAlamat"
+                style="@style/modifiedEditText"
+                android:hint="Alamat"
+                android:inputType="text"
+                android:maxLines="1"
+                tools:ignore="HardcodedText"
+                android:importantForAutofill="no" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textColor="@color/primaryTextColor"
-                android:layout_marginTop="5dp"
                 android:text="NO HP"
                 tools:ignore="HardcodedText,SmallSp" />
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edittextprofile"
-                android:padding="3dp"
-                android:textColor="@color/textDarkSecondary"
-                android:text="081246082444"
-                tools:ignore="HardcodedText" />
+                android:id="@+id/etEditProfileNohp"
+                style="@style/modifiedEditText"
+                android:hint="No HP aktif"
+                android:inputType="number"
+                android:maxLines="1"
+                tools:ignore="HardcodedText"
+                android:importantForAutofill="no" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textColor="@color/primaryTextColor"
-                android:layout_marginTop="5dp"
                 android:text="JENIS KELAMIN"
                 tools:ignore="HardcodedText,SmallSp" />
 
-            <EditText
+            <Spinner
+                android:id="@+id/spEditProfileJenisKelamin"
+                style="@style/spinner_style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/edittextprofile"
-                android:padding="3dp"
-                android:textColor="@color/textDarkSecondary"
-                android:text="Laki - Laki"
-                tools:ignore="HardcodedText" />
+                android:spinnerMode="dropdown" />
+
+
+            <Button
+                android:id="@+id/btnEditProfileSimpan"
+                style="@style/loginButton"
+                android:text="Simpan"
+                android:drawableRight="@drawable/pencil_edit"
+                android:layout_gravity="right"
+                android:paddingStart="20dp"
+                android:paddingEnd="30dp"
+                android:gravity="center|center_vertical"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"/>
 
         </LinearLayout>
-
+        </androidx.cardview.widget.CardView>
     </ScrollView>
 
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="false"
-        android:layout_gravity="end"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="40dp"
-        android:backgroundTint="@color/primaryTextColor"
-        android:src="@drawable/pencil_edit"
-        app:elevation="20dp"
-        app:fabCustomSize="80dp"
-        tools:targetApi="lollipop" />
 
 </RelativeLayout>

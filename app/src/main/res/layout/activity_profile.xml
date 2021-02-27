@@ -8,129 +8,169 @@
     android:orientation="horizontal"
     android:background="@drawable/background_profile"
     tools:context=".ProfileActivity">
-        
-    <LinearLayout
-        android:id="@+id/LLProfile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="40dp"
-        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/loginHeader"
-            android:text="Profile"
-            tools:ignore="HardcodedText" />
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="35dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/loginHeader"
+                    android:text="Profile"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textDark"
+                    android:text="Alexander Victoria Sin's"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText"
+                    android:importantForAutofill="no" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textDarkSecondary"
+                    android:text="pengguna@gmail.com"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText"
+                    android:importantForAutofill="no" />
+            </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/textPrimary"
-            android:layout_marginTop="20dp"
-            android:text="Nama Pengguna"
-            tools:ignore="HardcodedText" />
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="@dimen/loginCardRadius"
+            app:cardElevation="10dp">
 
-        <!--NIK-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:textColor="@color/primaryTextColor"
-            android:layout_marginTop="5dp"
-            android:text="NIK"
-            tools:ignore="HardcodedText,SmallSp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/textSecondary"
-            android:text="504628300001"
-            tools:ignore="HardcodedText" />
-
-        <!--EMAIL -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="EMAIL"
-            android:textColor="@color/primaryTextColor"
-            android:textSize="12sp"
-            tools:ignore="HardcodedText,SmallSp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/textSecondary"
-            android:text="pengguna@gmail.com"
-            tools:ignore="HardcodedText" />
-
-        <!--ALAMAT-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="ALAMAT"
-            android:textColor="@color/primaryTextColor"
-            android:textSize="12sp"
-            tools:ignore="HardcodedText,SmallSp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/textSecondary"
-            android:text="Jln.Nangka nomor 14"
-            tools:ignore="HardcodedText" />
-
-        <!--NOMOR TELP-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="NO HP"
-            android:textColor="@color/primaryTextColor"
-            android:textSize="12sp"
-            tools:ignore="HardcodedText,SmallSp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/textSecondary"
-            android:text="081246082444"
-            tools:ignore="HardcodedText" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                >
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="JENIS KELAMIN"
-            android:textColor="@color/primaryTextColor"
-            android:textSize="12sp"
-            tools:ignore="HardcodedText,SmallSp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/textSecondary"
-            android:text="Laki - Laki"
-            tools:ignore="HardcodedText" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/primaryTextColor"
+                    android:text="NIK"
+                    tools:ignore="HardcodedText,SmallSp" />
 
-    </LinearLayout>
+                <TextView
+                    style="@style/modifiedEditText"
+                    android:text="081923000001"
+                    android:maxLines="1"
+                    tools:ignore="HardcodedText"
+                    android:importantForAutofill="no" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="false"
-        android:layout_gravity="end"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="40dp"
-        android:backgroundTint="@color/primaryTextColor"
-        android:src="@drawable/pencil_edit"
-        app:elevation="20dp"
-        app:fabCustomSize="80dp"
-        tools:targetApi="lollipop" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/primaryTextColor"
+                    android:text="E-Mail"
+                    tools:ignore="HardcodedText,SmallSp" />
+
+                <TextView
+                    style="@style/modifiedEditText"
+                    android:text="pengguna@gmail.com"
+                    android:maxLines="1"
+                    tools:ignore="HardcodedText"
+                    android:importantForAutofill="no" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/primaryTextColor"
+                    android:text="Alamat"
+                    tools:ignore="HardcodedText,SmallSp" />
+
+                <TextView
+                    style="@style/modifiedEditText"
+                    android:text="Jln Banteng no 16"
+                    android:maxLines="1"
+                    tools:ignore="HardcodedText"
+                    android:importantForAutofill="no" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/primaryTextColor"
+                    android:text="NO HP"
+                    tools:ignore="HardcodedText,SmallSp" />
+
+                <TextView
+                    style="@style/modifiedEditText"
+                    android:text="0812460823636"
+                    android:maxLines="1"
+                    tools:ignore="HardcodedText"
+                    android:importantForAutofill="no" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/primaryTextColor"
+                    android:text="JENIS KELAMIN"
+                    tools:ignore="HardcodedText,SmallSp" />
+
+                <TextView
+                    style="@style/modifiedEditText"
+                    android:text="Laki - Laki"
+                    android:maxLines="1"
+                    tools:ignore="HardcodedText"
+                    android:importantForAutofill="no" />
+
+
+                <Button
+                    android:id="@+id/registerButton"
+                    style="@style/loginButton"
+                    android:text="Edit"
+                    android:drawableRight="@drawable/pencil_edit"
+                    android:layout_gravity="right"
+                    android:paddingEnd="30dp"
+                    android:paddingStart="20dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="30dp"
+                    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+
 
 </RelativeLayout>
