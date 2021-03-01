@@ -9,13 +9,12 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView flag;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent intent = new Intent(MainActivity.this, MainMenuActivity.class);
+        Intent intent = new Intent(MainActivity.this, SpeedboatListActivity.class);
         startActivity(intent);
 
     }
