@@ -20,4 +20,14 @@ public class MainMenuActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SpeedboatListActivity.class);
         startActivity(intent);
     }
+
+    public void register(View view) {
+        Intent intent = new Intent(this, RegisterActivity.class);
+        startActivity(intent);
+    }
+
+    public void login(View view) {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
 }
